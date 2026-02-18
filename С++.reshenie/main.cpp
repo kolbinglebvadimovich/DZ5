@@ -1,22 +1,24 @@
 #include <iostream>
 
 int main()
-
 {
-    int veriable1{ 200 };
-    int veriable2{ 500 };
-    
-    std::cout << std::noboolalpha;
-    std::cout << veriable1 == veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 += veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 > veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 < veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 != veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 >= veriable2 << std::endl; //Решение примера.
-    std::cout << veriable1 <= veriable2 << std::endl; //Решение примера.
+   const int size[5];
+   int integers[]{1, 2, 3, 4, 5 };
 
-    return EXIT_SUCCESS;
+   int array2[size];
+   array2[0] = 10;
+   array2[1] = 20;
+   array2[2] = 30;
+   array2[3] = 40;
+   array2[4] = 50;
 
+   for (int element{}; element < size; ++element)
+   {
+       std::cout << "Element[" << element << "]: " << array2[element] << std::endl;
+   }
+   
+
+   return EXIT_SUCCESS;
 }
 
 
